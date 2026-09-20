@@ -21,7 +21,7 @@ export async function seed(knex) {
       seek: 'https://www.nz.seek.com/profiles/levi-taylor-7gGVVN6NKD',
     }
   ]);
-  // Experience data
+  // Experiences data
   await knex('experiences').insert([
     {
       company: 'ANZ',
