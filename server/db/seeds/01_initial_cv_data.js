@@ -18,7 +18,7 @@ export async function seed(knex) {
       email: 'kinosj74@gmail.com',
       github: 'https://github.com/Levi-Taylor-Hotoke-26',
       linkedin: 'https://www.linkedin.com/in/levi-taylor-660710188/',
-      seek: 'nz.seek.com/profiles/levi-taylor-7gGVVN6NKD',
+      seek: 'https://www.nz.seek.com/profiles/levi-taylor-7gGVVN6NKD',
     }
   ]);
   // Experience data
