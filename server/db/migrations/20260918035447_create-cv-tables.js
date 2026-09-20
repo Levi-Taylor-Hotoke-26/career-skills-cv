@@ -12,6 +12,7 @@ export async function up(knex) {
     table.string('email');
     table.string('github');
     table.string('linkedIn');
+    table.string('seek');
   });
 
   // Experience
@@ -31,6 +32,7 @@ export async function up(knex) {
     table.text('description');
     table.string('tech_stack');
     table.string('repo_url');
+    table.string('deployed');
   });
 
   // Skills
