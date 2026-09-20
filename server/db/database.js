@@ -1,7 +1,20 @@
-import knex from 'knex';
-import config from '../knexfile.js';
+import knex from 'knex'
+import config from '../knexfile.js'
 
-const environment = process.env.NODE_ENV || 'development';
-const db = knex(config[environment]);
+const environment = process.env.NODE_ENV || 'development'
 
-export default db;
+const dbConfig = environment === 'production'
+  ? {
+    client: 'sqlite3',
+    connection: {
+      filename: './production.sqlite3'
+    },
+    useNullAsDefault: true,
+    migrations: { directory: './db/migrations' },
+    seeds: { directory: './db/seeds' }
+  }
+  : config[environment]
+
+const db = knex(dbConfig)
+
+export default db
