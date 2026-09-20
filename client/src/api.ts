@@ -6,6 +6,7 @@ export interface Profile {
   email: string;
   github: string;
   linkedin: string;
+  seek: string;
 }
 
 export interface Experience {
@@ -23,6 +24,7 @@ export interface Project {
   description: string;
   tech_stack: string;
   repo_url: string;
+  deployment_url: string;
 }
 
 export interface Skill {
