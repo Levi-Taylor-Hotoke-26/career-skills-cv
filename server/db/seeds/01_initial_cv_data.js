@@ -60,7 +60,7 @@ export async function seed(knex) {
       description: 'A gamified citizen-science app turning real-world nature observations of New Zealand species into a collectible card and battle game.',
       tech_stack: 'React, TypeScript, Node.js, Express, Knex, SQLite, Turso/libSQL, Gemini API',
       repo_url: 'https://github.com/Hotoke-2026/Momodex',
-      deployment: 'https://momodex.onrender.com/'
+      deployed: 'https://momodex.onrender.com/'
     },
     {
       title: 'Dev Academy Blog',
