@@ -12,6 +12,7 @@ export async function seed(knex) {
   // Profile data
   await knex('profile').insert([
     {
+      avatar_url: 'https://avatars.githubusercontent.com/u/179357454?v=4',
       name: 'Levi Taylor',
       title: 'Full-Stack Junior Web Developer',
       bio: 'Passionate developer building dynamic web apps with React, Node.js, and SQLite.',
@@ -105,5 +106,15 @@ export async function seed(knex) {
   await knex('qualifications').insert([
     { title: 'New Zealand Certificate in Information Technology', institution: 'Yoobee College', year: 'June 2026', description: 'Hands-on experience with core I.T. tools and industry-relevant techniques. Technical knowledge to troubleshoot effectively and support I.T. systems.' },
     { title: 'Fullstack Web Development', institution: 'Dev Academy', year: 'Oct 2026', description: 'Intensive full-stack web development bootcamp covering modern JavaScript, React, Node.js, Express, SQL, and agile team workflows.' }
+  ]);
+
+  // pokedex
+  await knex('pokedex').insert([
+    { category: 'Technical Stack', name: 'React & Typescript', level: 95, description: 'Building dynamic, responsive single-page web applications.' },
+    { category: 'Technical Stack', name: 'Node.js & Express', level: 90, description: 'Designing robust backend APIs and server-side routing.' },
+    { category: 'Technical Stack', name: 'SQL & Knex.js', level: 85, description: 'Database management, schema design, and migrations.' },
+    { category: 'Service Buffs', name: 'User Empathy & Communication', level: 98, description: 'Honed through high-volume client interaction and service delivery in retail.' },
+    { category: 'Service Buffs', name: 'Root-Cause Troubleshooting', level: 95, description: 'Debugging complex asynchronous code or resolving customer requests under pressure.' },
+    { category: 'Service Buffs', name: 'Cross-Functional Collaboration', level: 92, description: 'Working seamlessly in pair-programming squads and multi-layered service teams.' },
   ])
 };

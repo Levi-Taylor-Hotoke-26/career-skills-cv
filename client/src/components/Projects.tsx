@@ -18,11 +18,11 @@ export default function Projects({ projects }: ProjectsProps) {
             </div>
             
             <div className="project-links">
-              {project.deployment_url && (
+              {project.deployed && (
                 <p>
                   <strong>Live Demo:</strong>{' '}
-                  <a href={project.deployment_url} target="_blank" rel="noreferrer">
-                    {project.deployment_url}
+                  <a href={project.deployed} target="_blank" rel="noreferrer">
+                    {project.deployed}
                   </a>
                 </p>
               )}

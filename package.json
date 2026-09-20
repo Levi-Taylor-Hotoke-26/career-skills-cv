@@ -1,8 +1,14 @@
 {
+  "scripts": {
+  "dev": "concurrently \"pnpm --dir server dev\" \"pnpm --dir client dev\""
+},
   "name": "career-skills-cv",
   "private": true,
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
   }
 }
