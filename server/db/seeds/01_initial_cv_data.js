@@ -100,4 +100,10 @@ export async function seed(knex) {
     { category: 'Backend', name: 'Express' },
     { category: 'Database', name: 'Knex.js & SQLite3 / libSQL' }
   ]);
+
+  // qualifications
+  await knex('qualifications').insert([
+    { title: 'New Zealand Certificate in Information Technology', institution: 'Yoobee College', year: 'June 2026', description: 'Hands-on experience with core I.T. tools and industry-relevant techniques. Technical knowledge to troubleshoot effectively and support I.T. systems.' },
+    { title: 'Fullstack Web Development', institution: 'Dev Academy', year: 'Oct 2026', description: 'Intensive full-stack web development bootcamp covering modern JavaScript, React, Node.js, Express, SQL, and agile team workflows.' }
+  ])
 };
